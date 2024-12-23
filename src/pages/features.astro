@@ -1,0 +1,70 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout
+	title="Преимущества | Odyssey Exchange"
+	description="Узнайте о преимуществах торговли на Odyssey Exchange. 0% комиссии, высокие плечи и лучшие условия для трейдинга."
+>
+	<main>
+		<section class="features">
+			<h1>Преимущества Odyssey Exchange</h1>
+			<div class="features-grid">
+				<div class="feature-card">
+					<h2>0% Комиссии</h2>
+					<p>Торгуйте без комиссий на спот-рынке. Максимизируйте свою прибыль с каждой сделки.</p>
+				</div>
+				<div class="feature-card">
+					<h2>Плечо до 777x</h2>
+					<p>Используйте максимальное кредитное плечо для увеличения потенциальной прибыли.</p>
+				</div>
+				<div class="feature-card">
+					<h2>10% Возврат</h2>
+					<p>Получайте 10% возврата с каждой ликвидации, что делает торговлю более выгодной.</p>
+				</div>
+				<div class="feature-card">
+					<h2>Партнерская программа</h2>
+					<p>Зарабатывайте до 50% комиссии, приглашая новых пользователей на платформу.</p>
+				</div>
+			</div>
+		</section>
+	</main>
+</Layout>
+
+<style>
+	main {
+		margin-top: 6rem;
+		padding: 2rem 1rem;
+	}
+	.features {
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+	h1 {
+		text-align: center;
+		font-size: 3rem;
+		margin-bottom: 3rem;
+		background: linear-gradient(45deg, #3b82f6, #2563eb);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+	.features-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		gap: 2rem;
+	}
+	.feature-card {
+		background: rgba(37, 99, 235, 0.1);
+		border-radius: 1rem;
+		padding: 2rem;
+		border: 1px solid rgba(37, 99, 235, 0.2);
+	}
+	.feature-card h2 {
+		color: #3b82f6;
+		margin-bottom: 1rem;
+	}
+	.feature-card p {
+		color: #94a3b8;
+		line-height: 1.6;
+	}
+</style>

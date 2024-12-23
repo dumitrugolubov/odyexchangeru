@@ -1,0 +1,78 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout
+	title="О нас | Odyssey Exchange"
+	description="Узнайте больше о Odyssey Exchange - первой мем-коин бирже с уникальными условиями торговли и инновационным подходом."
+>
+	<main>
+		<section class="about">
+			<h1>О Odyssey Exchange</h1>
+			<div class="about-content">
+				<div class="about-text">
+					<p>Odyssey Exchange - это революционная криптовалютная биржа, созданная с фокусом на мем-койны и комьюнити. Мы стремимся сделать торговлю криптовалютой доступной и выгодной для каждого.</p>
+					<p>Наша миссия - создать самую удобную и выгодную платформу для торговли мем-койнами, где каждый пользователь может чувствовать себя частью сообщества.</p>
+					<h2>Наши ценности</h2>
+					<ul>
+						<li>Прозрачность и честность в работе</li>
+						<li>Инновационный подход к трейдингу</li>
+						<li>Поддержка комьюнити</li>
+						<li>Безопасность пользователей</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+	</main>
+</Layout>
+
+<style>
+	main {
+		margin-top: 6rem;
+		padding: 2rem 1rem;
+	}
+	.about {
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+	h1 {
+		text-align: center;
+		font-size: 3rem;
+		margin-bottom: 3rem;
+		background: linear-gradient(45deg, #3b82f6, #2563eb);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+	.about-content {
+		background: rgba(37, 99, 235, 0.1);
+		border-radius: 1rem;
+		padding: 2rem;
+		border: 1px solid rgba(37, 99, 235, 0.2);
+	}
+	.about-text {
+		color: #94a3b8;
+		line-height: 1.7;
+	}
+	.about-text p {
+		margin-bottom: 1.5rem;
+	}
+	h2 {
+		color: #3b82f6;
+		margin: 2rem 0 1rem;
+	}
+	ul {
+		list-style: none;
+		padding: 0;
+	}
+	li {
+		margin-bottom: 0.8rem;
+		padding-left: 1.5rem;
+		position: relative;
+	}
+	li::before {
+		content: "•";
+		color: #3b82f6;
+		position: absolute;
+		left: 0;
+	}
+</style>

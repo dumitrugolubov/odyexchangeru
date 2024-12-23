@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://odyexchange.ru/sitemap.xml

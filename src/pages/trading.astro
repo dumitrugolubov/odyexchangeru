@@ -1,0 +1,84 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout
+	title="Торговля | Odyssey Exchange"
+	description="Торгуйте криптовалютой на Odyssey Exchange с лучшими условиями. Спот и маржинальная торговля с плечом до 777x."
+>
+	<main>
+		<section class="trading">
+			<h1>Торговля на Odyssey Exchange</h1>
+			<div class="trading-types">
+				<div class="trading-card">
+					<h2>Спот торговля</h2>
+					<ul>
+						<li>0% комиссии на все сделки</li>
+						<li>Мгновенное исполнение ордеров</li>
+						<li>Широкий выбор торговых пар</li>
+						<li>Удобный интерфейс</li>
+					</ul>
+				</div>
+				<div class="trading-card">
+					<h2>Маржинальная торговля</h2>
+					<ul>
+						<li>Плечо до 777x</li>
+						<li>Низкие проценты по займам</li>
+						<li>Гибкие настройки левериджа</li>
+						<li>Профессиональные инструменты</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+	</main>
+</Layout>
+
+<style>
+	main {
+		margin-top: 6rem;
+		padding: 2rem 1rem;
+	}
+	.trading {
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+	h1 {
+		text-align: center;
+		font-size: 3rem;
+		margin-bottom: 3rem;
+		background: linear-gradient(45deg, #3b82f6, #2563eb);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+	.trading-types {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		gap: 2rem;
+	}
+	.trading-card {
+		background: rgba(37, 99, 235, 0.1);
+		border-radius: 1rem;
+		padding: 2rem;
+		border: 1px solid rgba(37, 99, 235, 0.2);
+	}
+	.trading-card h2 {
+		color: #3b82f6;
+		margin-bottom: 1.5rem;
+	}
+	.trading-card ul {
+		list-style: none;
+		padding: 0;
+	}
+	.trading-card li {
+		color: #94a3b8;
+		margin-bottom: 0.8rem;
+		padding-left: 1.5rem;
+		position: relative;
+	}
+	.trading-card li::before {
+		content: "•";
+		color: #3b82f6;
+		position: absolute;
+		left: 0;
+	}
+</style>

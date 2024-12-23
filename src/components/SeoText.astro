@@ -1,0 +1,38 @@
+---
+interface Props {
+    keywords: string[];
+}
+
+const { keywords } = Astro.props;
+---
+
+<section class="seo-text" aria-label="Дополнительная информация">
+    <div class="container">
+        {keywords.map((keyword) => (
+            <p class="keyword-paragraph">
+                <strong>{keyword}</strong> - это инновационная криптовалютная платформа, предлагающая уникальные условия для трейдинга. Наша биржа специализируется на торговле мем-койнами и предоставляет пользователям нулевую комиссию на спот-торговлю, возможность получать 10% возврата с ликвидаций и использовать кредитное плечо до 777x.
+            </p>
+        ))}
+    </div>
+</section>
+
+<style>
+    .seo-text {
+        background: rgba(15, 23, 42, 0.5);
+        padding: 4rem 0;
+        margin-top: 2rem;
+    }
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 1rem;
+    }
+    .keyword-paragraph {
+        margin-bottom: 1.5rem;
+        color: #94a3b8;
+        line-height: 1.7;
+    }
+    .keyword-paragraph strong {
+        color: #e2e8f0;
+    }
+</style>
